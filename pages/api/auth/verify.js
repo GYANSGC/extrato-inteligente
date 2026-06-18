@@ -1,6 +1,6 @@
-import { getSupabaseAdmin } from '../../../lib/supabase'
-import { signToken } from '../../../lib/auth'
-import { sendWelcomeEmail } from '../../../lib/email'
+import { getSupabaseAdmin } from '../../lib/supabase'
+import { signToken } from '../../lib/auth'
+import { sendWelcomeEmail } from '../../lib/email'
 
 /**
  * GET /api/auth/verify?token=xxx

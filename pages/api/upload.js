@@ -1,6 +1,6 @@
-import { withAuth, PLANO_LIMITES } from '../../../lib/auth'
-import { getSupabaseAdmin } from '../../../lib/supabase'
-import { parseFile } from '../../../lib/parsers'
+import { withAuth, PLANO_LIMITES } from '../../lib/auth'
+import { getSupabaseAdmin } from '../../lib/supabase'
+import { parseFile } from '../../lib/parsers'
 
 export const config = {
   api: { bodyParser: { sizeLimit: '10mb' } },

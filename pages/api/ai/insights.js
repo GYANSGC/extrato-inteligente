@@ -1,7 +1,7 @@
-import { withAuth } from '../../../lib/auth'
-import { getSupabaseAdmin } from '../../../lib/supabase'
-import { generateInsights } from '../../../lib/ai'
-import { rateLimit } from '../../../lib/rateLimit'
+import { withAuth } from '../../lib/auth'
+import { getSupabaseAdmin } from '../../lib/supabase'
+import { generateInsights } from '../../lib/ai'
+import { rateLimit } from '../../lib/rateLimit'
 
 const limiter = rateLimit({ windowMs: 60_000, max: 10, keyPrefix: 'ai_insights' })
 

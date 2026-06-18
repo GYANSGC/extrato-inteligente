@@ -1,6 +1,6 @@
 import Stripe from 'stripe'
-import { getSupabaseAdmin } from '../../../lib/supabase'
-import { sendProConfirmationEmail } from '../../../lib/email'
+import { getSupabaseAdmin } from '../../lib/supabase'
+import { sendProConfirmationEmail } from '../../lib/email'
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY)
 

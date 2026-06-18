@@ -1,6 +1,6 @@
-import { withPlan } from '../../../lib/auth'
-import { generateReportSummary } from '../../../lib/ai'
-import { rateLimit } from '../../../lib/rateLimit'
+import { withPlan } from '../../lib/auth'
+import { generateReportSummary } from '../../lib/ai'
+import { rateLimit } from '../../lib/rateLimit'
 
 const limiter = rateLimit({ windowMs: 60_000, max: 5, keyPrefix: 'ai_report' })
 

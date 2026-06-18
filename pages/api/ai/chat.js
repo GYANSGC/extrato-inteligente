@@ -1,6 +1,6 @@
-import { withAuth, PLANO_LIMITES } from '../../../lib/auth'
-import { chatWithAdvisor } from '../../../lib/ai'
-import { rateLimit } from '../../../lib/rateLimit'
+import { withAuth, PLANO_LIMITES } from '../../lib/auth'
+import { chatWithAdvisor } from '../../lib/ai'
+import { rateLimit } from '../../lib/rateLimit'
 
 const limiter = rateLimit({ windowMs: 60_000, max: 15, keyPrefix: 'ai_chat' })
 

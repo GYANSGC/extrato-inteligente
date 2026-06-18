@@ -1,5 +1,5 @@
-import { getSupabaseAdmin } from '../../../lib/supabase'
-import { comparePassword, signToken } from '../../../lib/auth'
+import { getSupabaseAdmin } from '../../lib/supabase'
+import { comparePassword, signToken } from '../../lib/auth'
 import { z } from 'zod'
 
 const schema = z.object({

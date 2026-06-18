@@ -1,5 +1,5 @@
-import { withAuth } from '../../../lib/auth'
-import { getSupabaseAdmin } from '../../../lib/supabase'
+import { withAuth } from '../../lib/auth'
+import { getSupabaseAdmin } from '../../lib/supabase'
 
 export default withAuth(async function handler(req, res) {
   const supabase = getSupabaseAdmin()

@@ -1,6 +1,6 @@
-import { withAuth, PLANO_LIMITES } from '../../../lib/auth'
-import { getSupabaseAdmin } from '../../../lib/supabase'
-import { generateInsights, chatWithAdvisor } from '../../../lib/ai'
+import { withAuth, PLANO_LIMITES } from '../../lib/auth'
+import { getSupabaseAdmin } from '../../lib/supabase'
+import { generateInsights, chatWithAdvisor } from '../../lib/ai'
 
 export default withAuth(async function handler(req, res) {
   const supabase = getSupabaseAdmin()

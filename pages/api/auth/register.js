@@ -1,6 +1,6 @@
-import { getSupabaseAdmin } from '../../../lib/supabase'
-import { hashPassword, signToken } from '../../../lib/auth'
-import { sendVerificationEmail } from '../../../lib/email'
+import { getSupabaseAdmin } from '../../lib/supabase'
+import { hashPassword, signToken } from '../../lib/auth'
+import { sendVerificationEmail } from '../../lib/email'
 import { v4 as uuidv4 } from 'uuid'
 import { z } from 'zod'
 

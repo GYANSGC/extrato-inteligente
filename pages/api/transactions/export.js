@@ -1,5 +1,5 @@
-import { withPlan } from '../../../lib/auth'
-import { getSupabaseAdmin } from '../../../lib/supabase'
+import { withPlan } from '../../lib/auth'
+import { getSupabaseAdmin } from '../../lib/supabase'
 
 export const config = { api: { responseLimit: '8mb' } }
 
