@@ -1,6 +1,6 @@
-import { withAuth } from '../../lib/auth'
-import { getSupabaseAdmin } from '../../lib/supabase'
-import { hashPassword, comparePassword } from '../../lib/auth'
+import { withAuth } from '../../../lib/auth'
+import { getSupabaseAdmin } from '../../../lib/supabase'
+import { hashPassword, comparePassword } from '../../../lib/auth'
 
 export default withAuth(async function handler(req, res) {
   const supabase = getSupabaseAdmin()

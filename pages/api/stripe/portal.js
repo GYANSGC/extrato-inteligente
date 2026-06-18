@@ -1,6 +1,6 @@
 import Stripe from 'stripe'
-import { withAuth } from '../../lib/auth'
-import { getSupabaseAdmin } from '../../lib/supabase'
+import { withAuth } from '../../../lib/auth'
+import { getSupabaseAdmin } from '../../../lib/supabase'
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY)
 

@@ -1,5 +1,5 @@
-import { getUserFromRequest } from '../../lib/auth'
-import { getSupabaseAdmin } from '../../lib/supabase'
+import { getUserFromRequest } from '../../../lib/auth'
+import { getSupabaseAdmin } from '../../../lib/supabase'
 
 /**
  * GET /api/auth/me

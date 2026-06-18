@@ -1,5 +1,5 @@
-import { withAuth, PLANO_LIMITES } from '../../lib/auth'
-import { getSupabaseAdmin } from '../../lib/supabase'
+import { withAuth, PLANO_LIMITES } from '../../../lib/auth'
+import { getSupabaseAdmin } from '../../../lib/supabase'
 
 /**
  * GET /api/user/usage
