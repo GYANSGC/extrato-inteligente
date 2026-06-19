@@ -114,9 +114,8 @@ export default withAuth(async function handler(req, res) {
       if (txErr) throw txErr
     }
 
-    // ── Incrementa contador de uploads ──
-    await supabase.rpc('increment_uploads', { user_id: userId }).catch(() => {
-      supabase.from('usuarios').update({ uploads_mes: (usuario?.uploads_mes || 0) + 1 }).eq('id', userId)
+   // ── Incrementa contador de uploads ──
+    await supabase.from('usuarios').update({ uploads_mes: (usuario?.uploads_mes || 0) + 1 }).eq('id', userId)
     })
 
     return res.status(200).json({
