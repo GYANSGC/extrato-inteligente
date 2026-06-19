@@ -116,7 +116,7 @@ export default withAuth(async function handler(req, res) {
 
    // ── Incrementa contador de uploads ──
     await supabase.from('usuarios').update({ uploads_mes: (usuario?.uploads_mes || 0) + 1 }).eq('id', userId)
-    })
+    
 
     return res.status(200).json({
       extrato: { id: extrato.id, nome: fileName, income, expense, balance },
